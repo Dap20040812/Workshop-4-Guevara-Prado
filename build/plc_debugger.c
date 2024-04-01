@@ -94,14 +94,14 @@ typedef const struct {
 } dbgvardsc_t;
 
 static const dbgvardsc_t dbgvardsc[] = {
-{&(RES0__INSTANCE0.A), BOOL_ENUM},
-{&(RES0__INSTANCE0.B), BOOL_ENUM},
-{&(RES0__INSTANCE0.C), BOOL_ENUM},
-{&(RES0__INSTANCE0.H1), BOOL_ENUM},
-{&(RES0__INSTANCE0.H2), BOOL_ENUM},
-{&(RES0__INSTANCE0.H3), BOOL_ENUM},
-{&(RES0__INSTANCE0.H4), BOOL_ENUM},
-{&(RES0__INSTANCE0.H5), BOOL_ENUM}
+{&(RES0__INSTANCE0.A), BOOL_P_ENUM},
+{&(RES0__INSTANCE0.B), BOOL_P_ENUM},
+{&(RES0__INSTANCE0.C), BOOL_P_ENUM},
+{&(RES0__INSTANCE0.H1), BOOL_O_ENUM},
+{&(RES0__INSTANCE0.H2), BOOL_O_ENUM},
+{&(RES0__INSTANCE0.H3), BOOL_O_ENUM},
+{&(RES0__INSTANCE0.H4), BOOL_O_ENUM},
+{&(RES0__INSTANCE0.H5), BOOL_O_ENUM}
 };
 
 static const dbgvardsc_index_t retain_list[] = {

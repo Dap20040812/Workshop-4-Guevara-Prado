@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<project xmlns="http://www.plcopen.org/xml/tc6_0201" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:ns1="http://www.plcopen.org/xml/tc6.xsd">
+<project xmlns="http://www.plcopen.org/xml/tc6_0201" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:ns1="http://www.plcopen.org/xml/tc6_0201">
   <fileHeader companyName="Desconocido" productName="Sin nombre" productVersion="1" creationDateTime="2024-03-26T11:05:44"/>
-  <contentHeader name="Sin nombre" modificationDateTime="2024-03-26T20:04:33">
+  <contentHeader name="Sin nombre" modificationDateTime="2024-03-30T18:16:12">
     <coordinateInfo>
       <fbd>
         <scaling x="10" y="10"/>
@@ -83,11 +83,13 @@
               </connectionPointOut>
             </leftPowerRail>
             <contact localId="3" negated="false" width="21" height="20">
-              <position x="80" y="90"/>
+              <position x="80" y="80"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="2">
-                  <position x="80" y="100"/>
+                  <position x="80" y="90"/>
+                  <position x="65" y="90"/>
+                  <position x="65" y="100"/>
                   <position x="50" y="100"/>
                 </connection>
               </connectionPointIn>
@@ -97,11 +99,13 @@
               <variable>A</variable>
             </contact>
             <contact localId="1" negated="false" width="21" height="20" executionOrderId="0">
-              <position x="80" y="130"/>
+              <position x="80" y="120"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="2">
-                  <position x="80" y="140"/>
+                  <position x="80" y="130"/>
+                  <position x="65" y="130"/>
+                  <position x="65" y="140"/>
                   <position x="50" y="140"/>
                 </connection>
               </connectionPointIn>
@@ -111,11 +115,13 @@
               <variable>A</variable>
             </contact>
             <contact localId="4" negated="false" width="21" height="20" executionOrderId="0">
-              <position x="80" y="170"/>
+              <position x="80" y="200"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="2">
-                  <position x="80" y="180"/>
+                  <position x="80" y="210"/>
+                  <position x="65" y="210"/>
+                  <position x="65" y="180"/>
                   <position x="50" y="180"/>
                 </connection>
               </connectionPointIn>
@@ -125,12 +131,12 @@
               <variable>A</variable>
             </contact>
             <contact localId="6" negated="false" width="21" height="20">
-              <position x="130" y="90"/>
+              <position x="130" y="80"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="3">
-                  <position x="130" y="100"/>
-                  <position x="101" y="100"/>
+                  <position x="130" y="90"/>
+                  <position x="101" y="90"/>
                 </connection>
               </connectionPointIn>
               <connectionPointOut>
@@ -139,12 +145,12 @@
               <variable>B</variable>
             </contact>
             <contact localId="5" negated="false" width="21" height="20" executionOrderId="0">
-              <position x="130" y="170"/>
+              <position x="130" y="200"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="4">
-                  <position x="130" y="180"/>
-                  <position x="101" y="180"/>
+                  <position x="130" y="210"/>
+                  <position x="101" y="210"/>
                 </connection>
               </connectionPointIn>
               <connectionPointOut>
@@ -153,11 +159,13 @@
               <variable>B</variable>
             </contact>
             <contact localId="7" negated="true" width="21" height="20">
-              <position x="80" y="210"/>
+              <position x="80" y="240"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="2">
-                  <position x="80" y="220"/>
+                  <position x="80" y="250"/>
+                  <position x="65" y="250"/>
+                  <position x="65" y="220"/>
                   <position x="50" y="220"/>
                 </connection>
               </connectionPointIn>
@@ -167,12 +175,12 @@
               <variable>A</variable>
             </contact>
             <contact localId="8" negated="true" width="21" height="20">
-              <position x="130" y="210"/>
+              <position x="130" y="240"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="7">
-                  <position x="130" y="220"/>
-                  <position x="101" y="220"/>
+                  <position x="130" y="250"/>
+                  <position x="101" y="250"/>
                 </connection>
               </connectionPointIn>
               <connectionPointOut>
@@ -181,25 +189,27 @@
               <variable>B</variable>
             </contact>
             <contact localId="9" negated="true" width="21" height="20" executionOrderId="0">
-              <position x="130" y="130"/>
+              <position x="130" y="120"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="1">
-                  <position x="130" y="140"/>
-                  <position x="101" y="140"/>
+                  <position x="130" y="130"/>
+                  <position x="101" y="130"/>
                 </connection>
               </connectionPointIn>
               <connectionPointOut>
                 <relPosition x="21" y="10"/>
               </connectionPointOut>
-              <variable>B</variable>
+              <variable>C</variable>
             </contact>
             <contact localId="10" negated="true" width="21" height="20" executionOrderId="0">
-              <position x="90" y="250"/>
+              <position x="90" y="280"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="2">
-                  <position x="90" y="260"/>
+                  <position x="90" y="290"/>
+                  <position x="60" y="290"/>
+                  <position x="60" y="260"/>
                   <position x="50" y="260"/>
                 </connection>
               </connectionPointIn>
@@ -209,13 +219,13 @@
               <variable>B</variable>
             </contact>
             <contact localId="11" negated="true" width="21" height="20" executionOrderId="0">
-              <position x="90" y="290"/>
+              <position x="90" y="320"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="2">
-                  <position x="90" y="300"/>
-                  <position x="80" y="300"/>
-                  <position x="80" y="260"/>
+                  <position x="90" y="330"/>
+                  <position x="60" y="330"/>
+                  <position x="60" y="260"/>
                   <position x="50" y="260"/>
                 </connection>
               </connectionPointIn>
@@ -225,12 +235,12 @@
               <variable>A</variable>
             </contact>
             <contact localId="12" negated="false" width="21" height="20" executionOrderId="0">
-              <position x="130" y="290"/>
+              <position x="130" y="320"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="11">
-                  <position x="130" y="300"/>
-                  <position x="111" y="300"/>
+                  <position x="130" y="330"/>
+                  <position x="111" y="330"/>
                 </connection>
               </connectionPointIn>
               <connectionPointOut>
@@ -238,41 +248,13 @@
               </connectionPointOut>
               <variable>B</variable>
             </contact>
-            <contact localId="13" negated="true" width="21" height="20">
-              <position x="180" y="90"/>
-              <connectionPointIn>
-                <relPosition x="0" y="10"/>
-                <connection refLocalId="6">
-                  <position x="180" y="100"/>
-                  <position x="151" y="100"/>
-                </connection>
-              </connectionPointIn>
-              <connectionPointOut>
-                <relPosition x="21" y="10"/>
-              </connectionPointOut>
-              <variable>C</variable>
-            </contact>
-            <contact localId="14" negated="true" width="21" height="20" executionOrderId="0">
-              <position x="180" y="130"/>
-              <connectionPointIn>
-                <relPosition x="0" y="10"/>
-                <connection refLocalId="9">
-                  <position x="180" y="140"/>
-                  <position x="151" y="140"/>
-                </connection>
-              </connectionPointIn>
-              <connectionPointOut>
-                <relPosition x="21" y="10"/>
-              </connectionPointOut>
-              <variable>C</variable>
-            </contact>
             <contact localId="15" negated="true" width="21" height="20" executionOrderId="0">
-              <position x="180" y="210"/>
+              <position x="180" y="240"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="8">
-                  <position x="180" y="220"/>
-                  <position x="151" y="220"/>
+                  <position x="180" y="250"/>
+                  <position x="151" y="250"/>
                 </connection>
               </connectionPointIn>
               <connectionPointOut>
@@ -281,12 +263,12 @@
               <variable>C</variable>
             </contact>
             <contact localId="16" negated="false" width="21" height="20" executionOrderId="0">
-              <position x="180" y="170"/>
+              <position x="180" y="200"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="5">
-                  <position x="180" y="180"/>
-                  <position x="151" y="180"/>
+                  <position x="180" y="210"/>
+                  <position x="151" y="210"/>
                 </connection>
               </connectionPointIn>
               <connectionPointOut>
@@ -295,12 +277,12 @@
               <variable>C</variable>
             </contact>
             <contact localId="17" negated="false" width="21" height="20" executionOrderId="0">
-              <position x="130" y="250"/>
+              <position x="130" y="280"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="10">
-                  <position x="130" y="260"/>
-                  <position x="111" y="260"/>
+                  <position x="130" y="290"/>
+                  <position x="111" y="290"/>
                 </connection>
               </connectionPointIn>
               <connectionPointOut>
@@ -312,9 +294,11 @@
               <position x="230" y="90"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
-                <connection refLocalId="13">
+                <connection refLocalId="6">
                   <position x="230" y="100"/>
-                  <position x="201" y="100"/>
+                  <position x="190" y="100"/>
+                  <position x="190" y="90"/>
+                  <position x="151" y="90"/>
                 </connection>
               </connectionPointIn>
               <connectionPointOut>
@@ -326,9 +310,17 @@
               <position x="230" y="130"/>
               <connectionPointIn>
                 <relPosition x="0" y="10"/>
-                <connection refLocalId="14">
+                <connection refLocalId="9">
                   <position x="230" y="140"/>
-                  <position x="201" y="140"/>
+                  <position x="190" y="140"/>
+                  <position x="190" y="130"/>
+                  <position x="151" y="130"/>
+                </connection>
+                <connection refLocalId="13">
+                  <position x="230" y="140"/>
+                  <position x="190" y="140"/>
+                  <position x="190" y="170"/>
+                  <position x="151" y="170"/>
                 </connection>
               </connectionPointIn>
               <connectionPointOut>
@@ -342,7 +334,9 @@
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="16">
                   <position x="230" y="180"/>
-                  <position x="201" y="180"/>
+                  <position x="215" y="180"/>
+                  <position x="215" y="210"/>
+                  <position x="201" y="210"/>
                 </connection>
               </connectionPointIn>
               <connectionPointOut>
@@ -356,7 +350,9 @@
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="15">
                   <position x="230" y="220"/>
-                  <position x="201" y="220"/>
+                  <position x="215" y="220"/>
+                  <position x="215" y="250"/>
+                  <position x="201" y="250"/>
                 </connection>
               </connectionPointIn>
               <connectionPointOut>
@@ -370,13 +366,15 @@
                 <relPosition x="0" y="10"/>
                 <connection refLocalId="17">
                   <position x="230" y="260"/>
-                  <position x="151" y="260"/>
+                  <position x="220" y="260"/>
+                  <position x="220" y="290"/>
+                  <position x="151" y="290"/>
                 </connection>
                 <connection refLocalId="12">
                   <position x="230" y="260"/>
-                  <position x="180" y="260"/>
-                  <position x="180" y="300"/>
-                  <position x="151" y="300"/>
+                  <position x="220" y="260"/>
+                  <position x="220" y="330"/>
+                  <position x="151" y="330"/>
                 </connection>
               </connectionPointIn>
               <connectionPointOut>
@@ -422,6 +420,36 @@
                 </connection>
               </connectionPointIn>
             </rightPowerRail>
+            <contact localId="24" negated="false" width="21" height="20">
+              <position x="80" y="160"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="2">
+                  <position x="80" y="170"/>
+                  <position x="65" y="170"/>
+                  <position x="65" y="140"/>
+                  <position x="50" y="140"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>A</variable>
+            </contact>
+            <contact localId="13" negated="false" width="21" height="20" executionOrderId="0">
+              <position x="130" y="160"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="24">
+                  <position x="130" y="170"/>
+                  <position x="101" y="170"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>B</variable>
+            </contact>
           </LD>
         </body>
         <documentation>

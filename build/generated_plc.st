@@ -10,8 +10,8 @@ PROGRAM program0
     H5 AT %QX0.4 : BOOL;
   END_VAR
 
-  H1 := NOT(C) AND B AND A;
-  H2 := NOT(C) AND NOT(B) AND A;
+  H1 := B AND A;
+  H2 := B AND A OR NOT(C) AND A;
   H3 := C AND B AND A;
   H4 := NOT(C) AND NOT(B) AND NOT(A);
   H5 := B AND NOT(A) OR C AND NOT(B);

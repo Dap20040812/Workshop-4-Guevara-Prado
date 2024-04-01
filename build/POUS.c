@@ -42,25 +42,33 @@ __end:
 
 
 void PROGRAM0_init__(PROGRAM0 *data__, BOOL retain) {
-  __INIT_VAR(data__->A,__BOOL_LITERAL(FALSE),retain)
-  __INIT_VAR(data__->B,__BOOL_LITERAL(FALSE),retain)
-  __INIT_VAR(data__->C,__BOOL_LITERAL(FALSE),retain)
-  __INIT_VAR(data__->H1,__BOOL_LITERAL(FALSE),retain)
-  __INIT_VAR(data__->H2,__BOOL_LITERAL(FALSE),retain)
-  __INIT_VAR(data__->H3,__BOOL_LITERAL(FALSE),retain)
-  __INIT_VAR(data__->H4,__BOOL_LITERAL(FALSE),retain)
-  __INIT_VAR(data__->H5,__BOOL_LITERAL(FALSE),retain)
+  __INIT_LOCATED(BOOL,__IX0_0,data__->A,retain)
+  __INIT_LOCATED_VALUE(data__->A,__BOOL_LITERAL(FALSE))
+  __INIT_LOCATED(BOOL,__IX0_1,data__->B,retain)
+  __INIT_LOCATED_VALUE(data__->B,__BOOL_LITERAL(FALSE))
+  __INIT_LOCATED(BOOL,__IX0_2,data__->C,retain)
+  __INIT_LOCATED_VALUE(data__->C,__BOOL_LITERAL(FALSE))
+  __INIT_LOCATED(BOOL,__QX0_0,data__->H1,retain)
+  __INIT_LOCATED_VALUE(data__->H1,__BOOL_LITERAL(FALSE))
+  __INIT_LOCATED(BOOL,__QX0_1,data__->H2,retain)
+  __INIT_LOCATED_VALUE(data__->H2,__BOOL_LITERAL(FALSE))
+  __INIT_LOCATED(BOOL,__QX0_2,data__->H3,retain)
+  __INIT_LOCATED_VALUE(data__->H3,__BOOL_LITERAL(FALSE))
+  __INIT_LOCATED(BOOL,__QX0_3,data__->H4,retain)
+  __INIT_LOCATED_VALUE(data__->H4,__BOOL_LITERAL(FALSE))
+  __INIT_LOCATED(BOOL,__QX0_4,data__->H5,retain)
+  __INIT_LOCATED_VALUE(data__->H5,__BOOL_LITERAL(FALSE))
 }
 
 // Code part
 void PROGRAM0_body__(PROGRAM0 *data__) {
   // Initialise TEMP variables
 
-  __SET_VAR(data__->,H1,,((!(__GET_VAR(data__->C,)) && __GET_VAR(data__->B,)) && __GET_VAR(data__->A,)));
-  __SET_VAR(data__->,H2,,((!(__GET_VAR(data__->C,)) && !(__GET_VAR(data__->B,))) && __GET_VAR(data__->A,)));
-  __SET_VAR(data__->,H3,,((__GET_VAR(data__->C,) && __GET_VAR(data__->B,)) && __GET_VAR(data__->A,)));
-  __SET_VAR(data__->,H4,,((!(__GET_VAR(data__->C,)) && !(__GET_VAR(data__->B,))) && !(__GET_VAR(data__->A,))));
-  __SET_VAR(data__->,H5,,((__GET_VAR(data__->B,) && !(__GET_VAR(data__->A,))) || (__GET_VAR(data__->C,) && !(__GET_VAR(data__->B,)))));
+  __SET_LOCATED(data__->,H1,,(__GET_LOCATED(data__->B,) && __GET_LOCATED(data__->A,)));
+  __SET_LOCATED(data__->,H2,,((__GET_LOCATED(data__->B,) && __GET_LOCATED(data__->A,)) || (!(__GET_LOCATED(data__->C,)) && __GET_LOCATED(data__->A,))));
+  __SET_LOCATED(data__->,H3,,((__GET_LOCATED(data__->C,) && __GET_LOCATED(data__->B,)) && __GET_LOCATED(data__->A,)));
+  __SET_LOCATED(data__->,H4,,((!(__GET_LOCATED(data__->C,)) && !(__GET_LOCATED(data__->B,))) && !(__GET_LOCATED(data__->A,))));
+  __SET_LOCATED(data__->,H5,,((__GET_LOCATED(data__->B,) && !(__GET_LOCATED(data__->A,))) || (__GET_LOCATED(data__->C,) && !(__GET_LOCATED(data__->B,)))));
 
   goto __end;
 
